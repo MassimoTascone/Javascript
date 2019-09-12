@@ -14,5 +14,14 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+
+        let a = document.getElementById("numbers").value;
+
+        let chiffre = a.split(",");
+
+        chiffre.sort(function(a, b){return a - b});
+
+        alert(chiffre);
+
     });
 })();

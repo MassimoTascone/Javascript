@@ -16,6 +16,7 @@ while (true) {
     let sex = prompt("Es-tu un homme ou une femme ?");
     let ville = prompt("Dans quelle ville habites-tu ?");
     let conf = confirm("Tu es un/une "+sex+ " de " +age+" ans "+"vivant à " +ville+ "        oui/non ?");
+    //let conf = confirm(`Tu es un/home ou femme $(sex) de $(age) ...`)
 
     if (conf) {
         break;

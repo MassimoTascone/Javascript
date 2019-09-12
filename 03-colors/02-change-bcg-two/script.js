@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        let colorChoice = document.getElementById("color").value;
+        console.log(colorChoice);
+        
+
+    }
+    )
+
+
+
+
+    
 })();
