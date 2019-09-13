@@ -14,25 +14,18 @@
     document.getElementById("run").addEventListener("click" ,() =>{
 
         let year = document.getElementById("year").value;
+        let arrayAnne = [];
         for (i=0; i<=11; i++){
             let annee = new Date(year, i, 13);
             // Grace a une loop j'ai recup tous les 13 du mois
             console.log(annee);
             let day = annee.getDay();
             if (day == 5) {
-                alert(annee);
+                arrayAnne.push(annee);
             }
+            
         }
-
-
-    
-
-
-
-
-
-
-
+        alert(arrayAnne);
 
     })
 
