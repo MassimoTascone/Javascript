@@ -13,13 +13,23 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
 
-    let date = new Date();
-    let year = date.getFullYear();
+    // let date = new Date();
+    // let year = date.getFullYear();
+    // let day = date.getDay();
+    // let month = parseInt(date.getMonth());
+    // let hour = date.getHours();
+    // let min = date.getMinutes();
 
-    let day = date.getDay();
-    let month = date.getMonth();
-    let hour = date.getHours();
-    let min = date.getMinutes();
-    document.getElementById("target").innerHTML = day+" "+" "+month+" "+year+ " , "+hour+ "h"+min;
+    // let arrayMonth = ["janvier","février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+    // let MonthLetter = arrayMonth[month];
+    // console.log(MonthLetter);
+
+    // document.getElementById("target").innerHTML = day+" "+" "+MonthLetter+" "+year+ " , "+hour+ "h"+min;
+
+    let date = new Date();
+    let options =  { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute:'numeric'};
+    document.getElementById("target").innerHTML =(date.toLocaleDateString('fr-FR', options ));
+
+
 
 })();

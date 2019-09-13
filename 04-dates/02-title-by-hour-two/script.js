@@ -14,20 +14,30 @@
     // your code here
     let date = new Date();
 
-    let heure = date.getHours();
+    let heure = 18;
 
-    let min = date.getMinutes();
+    let min = 45;
 
     console.log(min);
 
     if (heure < 17){
-        alert("Bonjour");
+        document.getElementById("target").innerHTML = "Bonjour";
+    }
+    else if(heure > 17){
+        document.getElementById("target").innerHTML = "Bonsoir";
 
     }
 
-    else if(heure > 17 && min > 30){
-        alert("Bonsoir");
+    else if(heure == 17 && min > 30){
+        document.getElementById("target").innerHTML = "Bonsoir";
+        
     }
+    else if(heure == 17 && min < 30){
+        document.getElementById("target").innerHTML = "Bonjour";
+        
+    }
+
+    
     
 
 
