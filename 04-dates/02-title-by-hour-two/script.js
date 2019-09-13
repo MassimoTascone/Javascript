@@ -20,9 +20,13 @@
 
     console.log(min);
 
-    if ( heure < 17){
+    if (heure < 17){
         alert("Bonjour");
 
+    }
+
+    else if(heure > 17 && min > 30){
+        alert("Bonsoir");
     }
     
 

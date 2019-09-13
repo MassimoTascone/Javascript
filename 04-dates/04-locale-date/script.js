@@ -12,4 +12,14 @@
 (() => {
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
+
+    let date = new Date();
+    let year = date.getFullYear();
+
+    let day = date.getDay();
+    let month = date.getMonth();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    document.getElementById("target").innerHTML = day+" "+" "+month+" "+year+ " , "+hour+ "h"+min;
+
 })();
