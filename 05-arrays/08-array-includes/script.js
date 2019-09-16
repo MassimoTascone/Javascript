@@ -26,4 +26,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+    
+            let yatil = fruits.includes("pomme");
+
+
+        console.log(yatil);
+
+    })
 })();

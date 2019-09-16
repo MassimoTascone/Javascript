@@ -91,7 +91,9 @@
     // your code here
     document.getElementById("run").addEventListener("click", () =>{
 
-        
-    })
+        let result = people.filter(chat=> chat.age > 18);             
+
+        console.log(result);
+    });
 
 })();
