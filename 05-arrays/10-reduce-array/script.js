@@ -91,7 +91,16 @@
     // your code here
     document.getElementById("run").addEventListener("click", () => {
 
-        
+        let arr = [];
+    for (let i = 0; i < people.length; i++) {
+      let sum = people[i].age;
+      arr.push(sum);
+    }
+
+    const summer = arr.reduce((total, value) => total + value, 0);
+
+    console.log(summer);
+
     })
 
 })();

@@ -28,4 +28,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        let fruits_clone = fruits.slice();
+        
+
+        console.log(fruits_clone);
+
+
+
+    })
+
 })();
