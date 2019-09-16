@@ -89,4 +89,14 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        for (let i=0; i < people.length; i++){
+            if(people[i].lastname == "Dupont" && people[i].firstname == "Jean"){
+                console.log(people[i].email + " "+"Index = "+i);
+            }
+        }
+
+
+    });
 })();
