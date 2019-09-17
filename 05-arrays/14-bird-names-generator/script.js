@@ -39,4 +39,23 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        let n = Math.floor(Math.random() * birds.length);// genere le random number pour birds array 
+        let adj = Array.from(adjectives); // changer le set en array 
+        let x = Math.floor(Math.random() * adj.length);// genere le random number pour adj
+
+        if (birds[n].fem) {
+            document.getElementById("target").innerHTML = birds[n].name +" "+ adj[x]+"e";
+        }
+
+        else {
+            document.getElementById("target").innerHTML = birds[n].name +" "+ adj[x];
+
+        }
+
+
+
+
+    })
 })();

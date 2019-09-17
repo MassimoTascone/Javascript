@@ -16,12 +16,12 @@
 
         let random = [];
 
-        for(i = 1 ; i <12 ; i++) {
+        for(i = 1 ; i <11 ; i++) {
             let number = Math.floor( Math.random() * 100 );
             random.push(number);
             document.getElementById("n-"+i).innerHTML = number;
             }
-        console.log(array);
+        
         //creation array de 10 elements avec random de 1 a 100 dedans
         let mini= Math.min.apply(null, random);
         document.getElementById("min").innerHTML = mini;

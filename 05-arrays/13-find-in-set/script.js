@@ -23,4 +23,12 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+        console.log("The Set has "+people.size+ " people in it");
+        let alex = people.has("Alexandre");
+        console.log("Is Alexandre in the list ? "+alex);
+
+    })
+
+
 })();

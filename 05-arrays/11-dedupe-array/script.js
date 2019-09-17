@@ -30,10 +30,9 @@
     // your code here
     document.getElementById("run").addEventListener("click", () =>{
 
-        let fruits_clone = fruits.slice();
-        
+        let unique = [...new Set(fruits)];
 
-        console.log(fruits_clone);
+        console.log(unique);
 
 
 
