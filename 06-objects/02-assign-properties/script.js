@@ -35,7 +35,7 @@
                 computers[i].available = true;
 
             }
-            if (computers[i].os == undefined){
+            if (computers[i].os == undefined){// Si os n'existe pas alors créé le
                 computers[i].os = "linux";
             }
 

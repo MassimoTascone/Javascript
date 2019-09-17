@@ -19,4 +19,8 @@
         status: "married",
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+        console.log(Object.keys(person)+ (Object.values(person))); // Object.keys reprend toutes les keys (une key c'est pour les objets ex: lastname, firstname, etc) et .values reprends les values des keys
+    })
+
 })();
