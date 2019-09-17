@@ -27,4 +27,24 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        for (let i = 0; i < computers.length; i++){ // loop pour chaque valeur de mon array 
+            if (computers[i].available == undefined){ // SI available n'existe pas alors je le créé.
+
+                computers[i].available = true;
+
+            }
+            if (computers[i].os == undefined){
+                computers[i].os = "linux";
+            }
+
+            if (computers[i].user == undefined){
+                computers[i].user = null;
+            }
+        }    
+        console.log(computers);
+
+
+    })
 })();
