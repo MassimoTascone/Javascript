@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    class Person {
+        constructor(firstname, lastname){
+            this.firstname=firstname;
+            this.lastname=lastname;
+        }
+        get fullname(){
+            return this.firstname +" "+ this.lastname;
+
+        }
+        set fullname(Name){
+            arraySep = fullname.split(" "); // J'utilise split pour diviser firstname et last name dans une array "arraySep"
+            this.firstname = arraySep[0];
+            this.lastname = arraySep[1];
+        }
+    }
+document.getElementById("run").addEventListener("click", () =>{
+    let moi = new Person("Massimo", "Ok");
+    moi.Name="Bob Bobi";
+    console.log(moi.Name);
+})
+
+
+
+
+
 })();

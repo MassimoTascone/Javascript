@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    class Person {
+        constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+            sayHello(){ // pas besoin d'ecrire function dans class
+                console.log("Hello, "+this.firstname, this.lastname+" !");
+            }
+        }
+
+    let bob = new Person("bob", "jones");
+    let chin = new Person("chin","chino");
+    bob.sayHello();
+
+    
 })();

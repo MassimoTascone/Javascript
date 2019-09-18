@@ -16,4 +16,32 @@
         }
     }
     // your code here
+    
+    document.getElementById("run").addEventListener("click", () =>{
+
+        class Cat extends Animal {
+            constructor(name, greeting){
+                super();
+                this.name = name;
+                Cat.greeting = greeting;
+            }
+        }
+    
+        class Dog extends Animal {
+            constructor(name, greeting){
+                super();
+                this.name = name;
+                Cat.greeting = greeting;
+            }
+        }
+
+
+        let cat = new Cat ("Grego", "Salut mec");
+        console.log(cat.sayHello());
+        let dog = new Dog ("Doggy", "Ciao mec");
+        console.log(dog.sayHello());
+
+
+
+    })
 })();

@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    let classTarget = document.getElementsByClassName("target");
+    console.log(classTarget);
+    classTarget[0] = "Owned mon pote";
+
+
+
+
 })();
