@@ -11,4 +11,27 @@
 
 (() => {
     // your code here
+    let target = document.getElementById("target");
+    let superTable = document.createElement("table"); // creation table
+    let superTd;
+
+    let superTr;
+    for (let i = 0; i < 10; i++){
+        let superTr= document.createElement("tr");
+        superTable.appendChild(superTr);
+        let superTd= document.createElement("td");
+        superTr.appendChild(superTd);
+        let txt = document.createTextNode("je sais faire un tableau");
+        superTd.appendChild(txt);
+
+
+        console.log(superTd);
+
+    }
+    
+    target.appendChild(superTable);
+
+
+
+
 })();

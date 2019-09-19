@@ -11,16 +11,15 @@
 
 (() => {
     // your code here
-    let x = document.getElementById("source").getAttribute("data-image");
+    let x = document.getElementById("source").getAttribute("data-image"); // je choppe data-image dans une variable
 
-    let image = document.createElement("img");
-    image.setAttribute("src", x);
+    let image = document.createElement("img"); // créé img
+
+    image.setAttribute("src", x); // j'attribue la valeur de data-image à img
 
     let target = document.getElementById("target");
-
+    
     target.appendChild(image);
-
-
 
     console.log(x);
 })();

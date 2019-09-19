@@ -23,7 +23,7 @@
             constructor(name, greeting){
                 super();
                 this.name = name;
-                Cat.greeting = greeting;
+                Cat.greeting = "Salut mec";
             }
         }
     
@@ -31,14 +31,14 @@
             constructor(name, greeting){
                 super();
                 this.name = name;
-                Cat.greeting = greeting;
+                Cat.greeting = "Ciao mec";
             }
         }
 
 
-        let cat = new Cat ("Grego", "Salut mec");
+        let cat = new Cat ("Grego");
         console.log(cat.sayHello());
-        let dog = new Dog ("Doggy", "Ciao mec");
+        let dog = new Dog ("Doggy");
         console.log(dog.sayHello());
 
 
