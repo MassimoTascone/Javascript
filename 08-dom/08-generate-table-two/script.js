@@ -11,4 +11,28 @@
 
 (() => {
     // your code here
+    let target = document.getElementById("target");// je fais une variable avec ma target
+    let table = document.createElement("table"); // creation table
+
+    let ligne;
+    let col;
+    for (i=1 ; i < 11; i++){ // loop pour créer 10 lignes
+        let ligne = document.createElement("tr");
+        table.appendChild(ligne);
+
+
+        for( let k= 1 ; k<11; k++){ // loop pour créer 10 col
+            let col = document.createElement("td");
+            ligne.appendChild(col);
+            let text = document.createTextNode([i]*[k]);
+            col.appendChild(text);
+
+        }
+    }
+
+    target.appendChild(table);
+
+
+
+
 })();

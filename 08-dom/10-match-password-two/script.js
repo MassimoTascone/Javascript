@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        let mdp = document.getElementById("pass-one").value;
+        let mdpTwo = document.getElementById("pass-two").value;
+
+        console.log(mdp, mdpTwo); 
+
+        if (mdp == mdpTwo){
+            console.log("les mdp sont égaux");
+            
+        }
+        else {
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+        }
+        
+
+    })
 })();
